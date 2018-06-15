@@ -35,8 +35,8 @@
   </parent>
 
   <scm>
-    <connection>scm:git:https://github.com/bitcoinj/bitcoinj</connection>
-    <developerConnection>scm:git:https://github.com/bitcoinj/bitcoinj</developerConnection>
+    <connection>scm:git:https://github.com/machinecoin-project/bitcoinj-samourai</connection>
+    <developerConnection>scm:git:https://github.com/machinecoin-project/bitcoinj-samourai</developerConnection>
     <url>scm:git:https://github.com/bitcoinj/bitcoinj</url>
   </scm>
 

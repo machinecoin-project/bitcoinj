@@ -117,7 +117,7 @@ public class Block extends Message {
         super(params);
         // Set up a few basic things. We are not complete after this though.
         version = setVersion;
-        difficultyTarget = 0x1d07fff8L;
+        difficultyTarget = 0x1e0ffff0L;
         time = System.currentTimeMillis() / 1000;
         prevBlockHash = Sha256Hash.ZERO_HASH;
 
@@ -542,7 +542,9 @@ public class Block extends Message {
         //
         // To prevent this attack from being possible, elsewhere we check that the difficultyTarget
         // field is of the right value. This requires us to have the preceeding blocks.
-        BigInteger target = getDifficultyTargetAsInteger();
+        
+        // TODO: Implement TimeTravel + Warp Drive
+        /*BigInteger target = getDifficultyTargetAsInteger();
 
         BigInteger h = getHash().toBigInteger();
         if (h.compareTo(target) > 0) {
@@ -552,7 +554,7 @@ public class Block extends Message {
                         + target.toString(16));
             else
                 return false;
-        }
+        }*/
         return true;
     }
 
